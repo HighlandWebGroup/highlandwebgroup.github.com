@@ -3,7 +3,7 @@
 /*jshint eqnull:true*/
 this.Handlebars = {};
 
-(function() {
+(function(Handlebars) {
 
 Handlebars.VERSION = "1.0.rc.1";
 
@@ -44,13 +44,10 @@ Handlebars.registerHelper('blockHelperMissing', function(context, options) {
     return inverse(this);
   } else if(type === "[object Array]") {
     if(context.length > 0) {
-      for(var i=0, j=context.length; i<j; i++) {
-        ret = ret + fn(context[i]);
-      }
+      return Handlebars.helpers.each(context, options);
     } else {
-      ret = inverse(this);
+      return inverse(this);
     }
-    return ret;
   } else {
     return fn(context);
   }
@@ -111,7 +108,7 @@ Handlebars.registerHelper('log', function(context) {
   Handlebars.log(context);
 });
 
-}());
+}(this.Handlebars));
 ;
 // lib/handlebars/compiler/parser.js
 /* Jison generated parser */
@@ -503,7 +500,11 @@ case 0:
 break;
 case 1: return 14; 
 break;
-case 2: this.popState(); return 14; 
+case 2:
+                                   if(yy_.yytext.slice(-1) !== "\\") this.popState();
+                                   if(yy_.yytext.slice(-1) === "\\") yy_.yytext = yy_.yytext.substr(0,yy_.yyleng-1);
+                                   return 14;
+                                 
 break;
 case 3: return 24; 
 break;
@@ -559,10 +560,11 @@ case 28: return 5;
 break;
 }
 };
-lexer.rules = [/^(?:[^\x00]*?(?=(\{\{)))/,/^(?:[^\x00]+)/,/^(?:[^\x00]{2,}?(?=(\{\{)))/,/^(?:\{\{>)/,/^(?:\{\{#)/,/^(?:\{\{\/)/,/^(?:\{\{\^)/,/^(?:\{\{\s*else\b)/,/^(?:\{\{\{)/,/^(?:\{\{&)/,/^(?:\{\{![\s\S]*?\}\})/,/^(?:\{\{)/,/^(?:=)/,/^(?:\.(?=[} ]))/,/^(?:\.\.)/,/^(?:[\/.])/,/^(?:\s+)/,/^(?:\}\}\})/,/^(?:\}\})/,/^(?:"(\\["]|[^"])*")/,/^(?:'(\\[']|[^'])*')/,/^(?:@[a-zA-Z]+)/,/^(?:true(?=[}\s]))/,/^(?:false(?=[}\s]))/,/^(?:[0-9]+(?=[}\s]))/,/^(?:[a-zA-Z0-9_$-]+(?=[=}\s\/.]))/,/^(?:\[[^\]]*\])/,/^(?:.)/,/^(?:$)/];
+lexer.rules = [/^(?:[^\x00]*?(?=(\{\{)))/,/^(?:[^\x00]+)/,/^(?:[^\x00]{2,}?(?=(\{\{|$)))/,/^(?:\{\{>)/,/^(?:\{\{#)/,/^(?:\{\{\/)/,/^(?:\{\{\^)/,/^(?:\{\{\s*else\b)/,/^(?:\{\{\{)/,/^(?:\{\{&)/,/^(?:\{\{![\s\S]*?\}\})/,/^(?:\{\{)/,/^(?:=)/,/^(?:\.(?=[} ]))/,/^(?:\.\.)/,/^(?:[\/.])/,/^(?:\s+)/,/^(?:\}\}\})/,/^(?:\}\})/,/^(?:"(\\["]|[^"])*")/,/^(?:'(\\[']|[^'])*')/,/^(?:@[a-zA-Z]+)/,/^(?:true(?=[}\s]))/,/^(?:false(?=[}\s]))/,/^(?:[0-9]+(?=[}\s]))/,/^(?:[a-zA-Z0-9_$-]+(?=[=}\s\/.]))/,/^(?:\[[^\]]*\])/,/^(?:.)/,/^(?:$)/];
 lexer.conditions = {"mu":{"rules":[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],"inclusive":false},"emu":{"rules":[2],"inclusive":false},"INITIAL":{"rules":[0,1,28],"inclusive":true}};
 return lexer;})()
-parser.lexer = lexer;function Parser () { this.yy = {}; }Parser.prototype = parser;parser.Parser = Parser;
+parser.lexer = lexer;
+function Parser () { this.yy = {}; }Parser.prototype = parser;parser.Parser = Parser;
 return new Parser;
 })();
 if (typeof require !== 'undefined' && typeof exports !== 'undefined') {
@@ -747,6 +749,7 @@ Handlebars.SafeString.prototype.toString = function() {
 
 (function() {
   var escape = {
+    "&": "&amp;",
     "<": "&lt;",
     ">": "&gt;",
     '"': "&quot;",
@@ -754,7 +757,7 @@ Handlebars.SafeString.prototype.toString = function() {
     "`": "&#x60;"
   };
 
-  var badChars = /&(?!\w+;)|[<>"'`]/g;
+  var badChars = /[&<>"'`]/g;
   var possible = /[&<>"'`]/;
 
   var escapeChar = function(chr) {
@@ -1907,7 +1910,7 @@ Handlebars.VM = {
     } else if (!Handlebars.compile) {
       throw new Handlebars.Exception("The partial " + name + " could not be compiled when running in runtime-only mode");
     } else {
-      partials[name] = Handlebars.compile(partial);
+      partials[name] = Handlebars.compile(partial, {data: data !== undefined});
       return partials[name](context, options);
     }
   }
