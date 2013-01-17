@@ -1,7 +1,7 @@
-Ember Skeleton
-==============
+Highland Web Group
+==================
 
-A skeleton application framework using Ember.js and Rake Pipeline.
+Built on ember-skeleton skeleton application framework using Ember.js and Rake Pipeline.
 
 Running
 -------
@@ -56,3 +56,13 @@ Or you can run the tests via:
 If you want to continuously run the tests every time a file changes, invoke:
 
     $ bundle exec guard
+
+Deploy
+------
+
+Site is host on github pages
+
+      bundle exec rake build
+      git add assets
+      git commit -m "updated assets files for deployment"
+      git push origin master

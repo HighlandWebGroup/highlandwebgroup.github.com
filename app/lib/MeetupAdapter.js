@@ -20,7 +20,10 @@ App.MeetupAdapter = DS.RESTAdapter.extend({
 
     var old_s = hash.success;
     hash.success = function(data){
-      old_s.call(this,{ groups: data.results});
+      result_type = url.substr(url.lastIndexOf('/') + 1);
+      var json = {}
+      json[result_type] = data.results;
+      old_s.call(this,json);
     }
 
     jQuery.ajax(hash);

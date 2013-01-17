@@ -1,10 +1,15 @@
 <nav role="navigation" class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="#">ember-skeleton</a>
+      <a class="brand" href="#">Highland Web Group</a>
     </div>
   </div>
 </nav>
 <div id="main" role="main" class="container">
-  {{{App.groups.firstObject.description}}}
+  {{{highland_web_group.description}}}
+
+  {{#each event in upcoming_events }}
+    {{event.time}}
+    {{{event.description}}}
+  {{/each}}
 </div>
