@@ -60,7 +60,7 @@ If you want to continuously run the tests every time a file changes, invoke:
 Deploy
 ------
 
-Site is host on github pages
+Site is hosted on github pages, http://highlandwebgroup.github.com/
 
       bundle exec rake build
       git add assets
