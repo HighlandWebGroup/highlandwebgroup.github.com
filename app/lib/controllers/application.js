@@ -10,10 +10,16 @@ App.ApplicationController = Ember.Controller.extend({
   highland_web_group: null,
   events: App.Event.find({ group_urlname: "highland-web-group", status:"upcoming,past"}),
   past_events: function(){
-    return this.get('events').filterProperty('status','past');
+    return Ember.ArrayController.create({
+      content: this.get('events').filterProperty('status','past'),
+      sortProperties: ['time'],
+      sortAscending: false
+    });
   }.property('events.@each'),
   upcoming_events: function(){
-    return this.get('events').filterProperty('status','upcoming');
+    var ue =  this.get('events').filterProperty('status','upcoming');
+    ue.set('sortProperties',['description']);
+    return ue;
   }.property('events.@each'),
   photos: App.Photo.find({ group_urlname: "highland-web-group"}),
 });

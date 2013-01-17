@@ -28,4 +28,13 @@ App.MeetupAdapter = DS.RESTAdapter.extend({
 
     jQuery.ajax(hash);
   },
-})
+});
+
+App.MeetupAdapter.registerTransform('object', {
+  serialize: function(serialized) {
+    return Em.isNone(serialized) ? {} : serialized;
+  },
+  deserialize: function(deserialized) {
+    return Em.isNone(deserialized) ? {} : deserialized;
+  }
+});

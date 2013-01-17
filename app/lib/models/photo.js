@@ -8,6 +8,7 @@ App.Photo = DS.Model.extend({
   highres_link: attr('string'),
   photo_id: attr('number'),
   photo_link: attr('string'),
-  thumb_link: attr('string')
+  thumb_link: attr('string'),
+  photo_album: attr('object')
 
 })

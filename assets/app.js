@@ -1,7 +1,7 @@
 
 loader.register('ember-skeleton/~templates/application', function(require) {
 
-return Ember.Handlebars.compile("<nav role=\"navigation\" class=\"navbar navbar-fixed-top navbar-inverse\">\n  <div class=\"navbar-inner\">\n    <div class=\"container\">\n      <a class=\"brand\" href=\"#\">Highland Web Group</a>\n    </div>\n  </div>\n</nav>\n<div id=\"main\" role=\"main\" class=\"container\">\n  {{{highland_web_group.description}}}\n\n  <h2>Upcoming Events</h2>\n  {{#each upcoming_events }}\n    {{time}}\n    {{{description}}}\n  {{/each}}\n\n  <h2>Past Events</h2>\n  {{#each past_events }}\n    {{time}}\n    {{{description}}}\n  {{/each}}\n\n</div>\n");
+return Ember.Handlebars.compile("<nav role=\"navigation\" class=\"navbar navbar-fixed-top navbar-inverse\">\n  <div class=\"navbar-inner\">\n    <div class=\"container\">\n      <a class=\"brand\" href=\"#\">Highland Web Group</a>\n    </div>\n  </div>\n</nav>\n<div id=\"main\" role=\"main\" class=\"container\">\n  {{{highland_web_group.description}}}\n\n  <h2>Past Events</h2>\n  {{#each event in past_events }}\n    {{event.time}}\n    {{{event.description}}}\n    {{event_photo event}}\n  {{/each}}\n\n  <h2>Upcoming Events</h2>\n  {{#each upcoming_events }}\n    {{time}}\n    {{{description}}}\n  {{/each}}\n\n</div>\n");
 
 });
 
@@ -44226,7 +44226,16 @@ App.MeetupAdapter = DS.RESTAdapter.extend({
 
     jQuery.ajax(hash);
   },
-})
+});
+
+App.MeetupAdapter.registerTransform('object', {
+  serialize: function(serialized) {
+    return Em.isNone(serialized) ? {} : serialized;
+  },
+  deserialize: function(deserialized) {
+    return Em.isNone(deserialized) ? {} : deserialized;
+  }
+});
 
 });
 
@@ -44248,10 +44257,16 @@ App.ApplicationController = Ember.Controller.extend({
   highland_web_group: null,
   events: App.Event.find({ group_urlname: "highland-web-group", status:"upcoming,past"}),
   past_events: function(){
-    return this.get('events').filterProperty('status','past');
+    return Ember.ArrayController.create({
+      content: this.get('events').filterProperty('status','past'),
+      sortProperties: ['time'],
+      sortAscending: false
+    });
   }.property('events.@each'),
   upcoming_events: function(){
-    return this.get('events').filterProperty('status','upcoming');
+    var ue =  this.get('events').filterProperty('status','upcoming');
+    ue.set('sortProperties',['description']);
+    return ue;
   }.property('events.@each'),
   photos: App.Photo.find({ group_urlname: "highland-web-group"}),
 });
@@ -44310,6 +44325,19 @@ Ember.View.reopen({
 });
 
 loader.register('ember-skeleton/helpers', function(require) {
+require('ember-skeleton/helpers/event_photo');
+
+});
+
+loader.register('ember-skeleton/helpers/event_photo', function(require) {
+Ember.Handlebars.registerBoundHelper('event_photo', function(ev){
+  var photos = this.get('controller.photos').filterProperty('photo_album.event_id',ev.get('id'));
+  var html = "";
+  photos.forEach(function(photo,index,enumerable){
+    html = html + "<img src=\""+photo.get('photo_link')+"\">"
+  });
+  return html.htmlSafe();
+});
 
 });
 
@@ -44366,7 +44394,8 @@ App.Photo = DS.Model.extend({
   highres_link: attr('string'),
   photo_id: attr('number'),
   photo_link: attr('string'),
-  thumb_link: attr('string')
+  thumb_link: attr('string'),
+  photo_album: attr('object')
 
 })
 

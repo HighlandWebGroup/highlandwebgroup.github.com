@@ -8,14 +8,15 @@
 <div id="main" role="main" class="container">
   {{{highland_web_group.description}}}
 
-  <h2>Upcoming Events</h2>
-  {{#each upcoming_events }}
-    {{time}}
-    {{{description}}}
+  <h2>Past Events</h2>
+  {{#each event in past_events }}
+    {{event.time}}
+    {{{event.description}}}
+    {{event_photo event}}
   {{/each}}
 
-  <h2>Past Events</h2>
-  {{#each past_events }}
+  <h2>Upcoming Events</h2>
+  {{#each upcoming_events }}
     {{time}}
     {{{description}}}
   {{/each}}
