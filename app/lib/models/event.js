@@ -1,3 +1,5 @@
+require('ember-skeleton/models/photo');
+
 var attr = DS.attr;
 
 App.Event = DS.Model.extend({
@@ -6,6 +8,6 @@ App.Event = DS.Model.extend({
   name: attr('string'),
   time: attr('date'),
   description: attr('string'),
-  how_to_find_us: attr('string')
+  how_to_find_us: attr('string'),
 
 })

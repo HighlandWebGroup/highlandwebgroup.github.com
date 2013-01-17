@@ -1,7 +1,7 @@
 
 loader.register('ember-skeleton/~templates/application', function(require) {
 
-return Ember.Handlebars.compile("<nav role=\"navigation\" class=\"navbar navbar-fixed-top navbar-inverse\">\n  <div class=\"navbar-inner\">\n    <div class=\"container\">\n      <a class=\"brand\" href=\"#\">Highland Web Group</a>\n    </div>\n  </div>\n</nav>\n<div id=\"main\" role=\"main\" class=\"container\">\n  {{{highland_web_group.description}}}\n\n  {{#each event in upcoming_events }}\n    {{event.time}}\n    {{{event.description}}}\n  {{/each}}\n</div>\n");
+return Ember.Handlebars.compile("<nav role=\"navigation\" class=\"navbar navbar-fixed-top navbar-inverse\">\n  <div class=\"navbar-inner\">\n    <div class=\"container\">\n      <a class=\"brand\" href=\"#\">Highland Web Group</a>\n    </div>\n  </div>\n</nav>\n<div id=\"main\" role=\"main\" class=\"container\">\n  {{{highland_web_group.description}}}\n\n  <h2>Upcoming Events</h2>\n  {{#each upcoming_events }}\n    {{time}}\n    {{{description}}}\n  {{/each}}\n\n  <h2>Past Events</h2>\n  {{#each past_events }}\n    {{time}}\n    {{{description}}}\n  {{/each}}\n\n</div>\n");
 
 });
 
@@ -44247,12 +44247,20 @@ App.ApplicationController = Ember.Controller.extend({
   }.observes('groups.@each'),
   highland_web_group: null,
   events: App.Event.find({ group_urlname: "highland-web-group", status:"upcoming,past"}),
+  past_events: function(){
+    return this.get('events').filterProperty('status','past');
+  }.property('events.@each'),
   upcoming_events: function(){
     return this.get('events').filterProperty('status','upcoming');
-  }.property('events.@each')
+  }.property('events.@each'),
+  photos: App.Photo.find({ group_urlname: "highland-web-group"}),
 });
 
 
+
+});
+
+loader.register('ember-skeleton/controllers/groups_controller', function(require) {
 
 });
 
@@ -44272,8 +44280,7 @@ App = Ember.Application.create({
 
 loader.register('ember-skeleton/env', function(require) {
 ENV = typeof ENV !== 'undefined' ? ENV : {
-  CP_DEFAULT_CACHEABLE: true,
-  VIEW_PRESERVES_CONTEXT: true
+  CP_DEFAULT_CACHEABLE: true
 };
 
 });
@@ -44302,18 +44309,25 @@ Ember.View.reopen({
 
 });
 
+loader.register('ember-skeleton/helpers', function(require) {
+
+});
+
 loader.register('ember-skeleton/main', function(require) {
 require('ember-skeleton/core');
 require('ember-skeleton/store');
 require('ember-skeleton/router');
 require('ember-skeleton/controllers');
 require('ember-skeleton/views');
+require('ember-skeleton/helpers');
 
 App.initialize();
 
 });
 
 loader.register('ember-skeleton/models/event', function(require) {
+require('ember-skeleton/models/photo');
+
 var attr = DS.attr;
 
 App.Event = DS.Model.extend({
@@ -44322,7 +44336,7 @@ App.Event = DS.Model.extend({
   name: attr('string'),
   time: attr('date'),
   description: attr('string'),
-  how_to_find_us: attr('string')
+  how_to_find_us: attr('string'),
 
 })
 
@@ -44338,6 +44352,23 @@ App.Group = DS.Model.extend({
     console.log('model loaded');
   }
 });
+
+});
+
+loader.register('ember-skeleton/models/photo', function(require) {
+var attr = DS.attr;
+
+App.Photo = DS.Model.extend({
+
+  caption: attr('string'),
+  created: attr('date'),
+  updated: attr('date'),
+  highres_link: attr('string'),
+  photo_id: attr('number'),
+  photo_link: attr('string'),
+  thumb_link: attr('string')
+
+})
 
 });
 

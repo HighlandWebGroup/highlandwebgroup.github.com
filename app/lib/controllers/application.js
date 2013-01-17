@@ -9,9 +9,13 @@ App.ApplicationController = Ember.Controller.extend({
   }.observes('groups.@each'),
   highland_web_group: null,
   events: App.Event.find({ group_urlname: "highland-web-group", status:"upcoming,past"}),
+  past_events: function(){
+    return this.get('events').filterProperty('status','past');
+  }.property('events.@each'),
   upcoming_events: function(){
     return this.get('events').filterProperty('status','upcoming');
-  }.property('events.@each')
+  }.property('events.@each'),
+  photos: App.Photo.find({ group_urlname: "highland-web-group"}),
 });
 
 
