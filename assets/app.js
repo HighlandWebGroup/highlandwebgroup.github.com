@@ -7,13 +7,7 @@ return Ember.Handlebars.compile("<nav role=\"navigation\" class=\"navbar navbar-
 
 loader.register('ember-skeleton/~templates/events', function(require) {
 
-return Ember.Handlebars.compile("{{ render \"groups\" }}\n\n<h2>Past Events</h2>\n{{#each event in past_events }}\n  {{event.time}}\n  {{{event.description}}}\n  {{event_photo event}}\n{{/each}}\n\n<h2>Upcoming Events</h2>\n{{#each upcoming_events }}\n  {{time}}\n  {{{description}}}\n{{/each}}\n\n");
-
-});
-
-loader.register('ember-skeleton/~templates/groups', function(require) {
-
-return Ember.Handlebars.compile("<h2>Group</h2>\n");
+return Ember.Handlebars.compile("\n{{{ groups.firstObject.description }}}\n\n<h2>Past Events</h2>\n{{#each event in past_events }}\n  {{event.time}}\n  {{{event.description}}}\n  {{event_photo event}}\n{{/each}}\n\n<h2>Upcoming Events</h2>\n{{#each upcoming_events }}\n  {{time}}\n  {{{description}}}\n{{/each}}\n\n");
 
 });
 
@@ -45372,16 +45366,25 @@ App.ApplicationController = Ember.Controller.extend({
 
 loader.register('ember-skeleton/controllers/events_controller', function(require) {
 App.EventsController = Ember.ArrayController.extend({
+
+  // not really the best location for these but where else? 
+  groups: App.Group.find({ group_urlname: "highland-web-group"}),
+  photos: App.Photo.find({ group_urlname: "highland-web-group"}),
+  // TODO move above
+
   past_events: function(){
-    var pe = this.get('content').filterProperty('status','past');
-    pe.set('sortProperties', ['time']);
-    pe.set('sortAscending', false);
-    return pe;
+    return Ember.ArrayController.create({
+      content: this.get('content').filterProperty('status','past'),
+      sortProperties: ['time'],
+      sortAscending: false
+    });
   }.property('content.@each'),
   upcoming_events: function(){
-    var ue =  this.get('content').filterProperty('status','upcoming');
-    ue.set('sortProperties',['description']);
-    return ue;
+    return Ember.ArrayController.create({
+      content: this.get('content').filterProperty('status','upcoming'),
+      sortProperties: ['time'],
+      sortAscending: true
+    });
   }.property('content.@each')
 
 });
@@ -45446,12 +45449,12 @@ require('ember-skeleton/helpers/event_photo');
 
 loader.register('ember-skeleton/helpers/event_photo', function(require) {
 Ember.Handlebars.registerBoundHelper('event_photo', function(ev){
-  /*var photos = this.get('controller.photos').filterProperty('photo_album.event_id',ev.get('id'));
+  var photos = this.get('controller.photos').filterProperty('photo_album.event_id',ev.get('id'));
   var html = "";
   photos.forEach(function(photo,index,enumerable){
     html = html + "<img src=\""+photo.get('photo_link')+"\"><p>"+photo.get('caption')+"</p>"
   });
-  return html.htmlSafe();*/
+  return html.htmlSafe();
 });
 
 });
@@ -45537,9 +45540,6 @@ App.EventsRoute = Ember.Route.extend({
 
 App.ApplicationRoute = Ember.Route.extend({
   setupController: function(){
-    //this.controllerFor('photo', App.Photo).set('model', App.Photo.find({ group_urlname: "highland-web-group"}));
-    //this.controllerFor('groups', App.Group).set('cont', App.Group.find({ group_urlname: "highland-web-group"}));
-
   }
 })
 
@@ -45575,8 +45575,5 @@ App.EventsView = Ember.View.extend({
   templateName: 'ember-skeleton/~templates/events'
 });
 
-App.GroupsView = Ember.View.extend({
-  templateName: 'ember-skeleton/~templates/groups'
-});
 
 });
