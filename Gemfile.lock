@@ -21,6 +21,9 @@ GEM
       Platform (>= 0.4.0)
       open4
     Platform (0.4.0)
+    bourbon (3.1.0)
+      sass (>= 3.2.0)
+      thor
     chunky_png (1.2.6)
     colored (1.2)
     compass (0.12.2)
@@ -63,6 +66,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bourbon
   colored
   compass
   guard

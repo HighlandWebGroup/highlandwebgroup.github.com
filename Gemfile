@@ -11,6 +11,7 @@ gem 'rack-rewrite'
 
 gem 'sass'
 gem 'compass'
+gem 'bourbon'
 
 gem 'uglifier'
 gem 'yui-compressor'
