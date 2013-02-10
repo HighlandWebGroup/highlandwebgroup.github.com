@@ -1,11 +1,11 @@
-/* line 4, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 4, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grids {
   list-style: none;
   margin: 0 0 0 -1%;
   width: 102%;
 }
 
-/* line 12, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 12, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 div[class*="grid-"] {
   display: inline-block;
   float: left;
@@ -13,42 +13,42 @@ div[class*="grid-"] {
   padding: 0px;
 }
 
-/* line 25, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 25, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-1 {
   width: 6.333%;
 }
 
-/* line 28, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 28, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-3 {
   width: 23%;
 }
 
-/* line 31, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 31, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-4 {
   width: 31.333%;
 }
 
-/* line 34, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 34, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-one-third {
   width: 31.333%;
 }
 
-/* line 37, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 37, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-two-thirds {
   width: 64.666%;
 }
 
-/* line 40, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 40, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-half, .grid-6 {
   width: 48%;
 }
 
-/* line 43, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 43, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-12 {
   width: 98%;
 }
 
-/* line 47, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 47, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .resp-img {
   width: 100%;
 }
@@ -59,7 +59,7 @@ div[class*="grid-"] {
 /*
  * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-/* line 21, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 21, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 article,
 aside,
 details,
@@ -77,7 +77,7 @@ summary {
 /*
  * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-/* line 31, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 31, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 audio,
 canvas,
 video {
@@ -90,7 +90,7 @@ video {
  * Prevents modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 42, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 42, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -101,7 +101,7 @@ audio:not([controls]) {
  * and Safari 4.
  * Known issue: no IE 6 support.
  */
-/* line 53, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 53, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -115,7 +115,7 @@ audio:not([controls]) {
  * 2. Prevents iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 68, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 68, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 html {
   font-size: 100%;
   /* 1 */
@@ -129,7 +129,7 @@ html {
  * Addresses `font-family` inconsistency between `textarea` and other form
  * elements.
  */
-/* line 83, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 83, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 html,
 button,
 input,
@@ -141,7 +141,7 @@ textarea {
 /*
  * Addresses margins handled incorrectly in IE 6/7.
  */
-/* line 91, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 91, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 body {
   margin: 0;
 }
@@ -152,7 +152,7 @@ body {
 /*
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
-/* line 103, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 103, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -160,7 +160,7 @@ a:focus {
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
  */
-/* line 112, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 112, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -174,37 +174,37 @@ a:hover {
  * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
-/* line 126, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 126, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 131, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 131, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-/* line 136, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 136, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-/* line 141, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 141, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-/* line 146, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 146, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-/* line 151, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 151, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0;
@@ -213,7 +213,7 @@ h6 {
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
-/* line 160, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 160, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -221,13 +221,13 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
-/* line 169, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 169, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 173, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 173, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 blockquote {
   margin: 1em 40px;
 }
@@ -235,7 +235,7 @@ blockquote {
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
-/* line 181, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 181, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -243,7 +243,7 @@ dfn {
 /*
  * Addresses styling not present in IE 6/7/8/9.
  */
-/* line 189, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 189, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -252,7 +252,7 @@ mark {
 /*
  * Addresses margins set differently in IE 6/7.
  */
-/* line 199, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 199, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 p,
 pre {
   margin: 1em 0;
@@ -261,7 +261,7 @@ pre {
 /*
  * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
-/* line 210, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 210, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 code,
 kbd,
 pre,
@@ -274,7 +274,7 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
-/* line 220, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 220, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -284,7 +284,7 @@ pre {
 /*
  * Addresses CSS quotes not supported in IE 6/7.
  */
-/* line 230, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 230, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 q {
   quotes: none;
 }
@@ -292,7 +292,7 @@ q {
 /*
  * Addresses `quotes` property not supported in Safari 4.
  */
-/* line 239, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 239, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 q:before,
 q:after {
   content: '';
@@ -302,7 +302,7 @@ q:after {
 /*
  * Addresses inconsistent and variable font size in all browsers.
  */
-/* line 248, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 248, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -310,7 +310,7 @@ small {
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 257, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 257, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -319,12 +319,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 264, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 264, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 268, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 268, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -335,7 +335,7 @@ sub {
 /*
  * Addresses margins set differently in IE 6/7.
  */
-/* line 283, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 283, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 dl,
 menu,
 ol,
@@ -343,7 +343,7 @@ ul {
   margin: 1em 0;
 }
 
-/* line 287, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 287, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 dd {
   margin: 0 0 0 40px;
 }
@@ -351,7 +351,7 @@ dd {
 /*
  * Addresses paddings set differently in IE 6/7.
  */
-/* line 297, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 297, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 menu,
 ol,
 ul {
@@ -361,7 +361,7 @@ ul {
 /*
  * Corrects list images handled incorrectly in IE 7.
  */
-/* line 306, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 306, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -375,7 +375,7 @@ nav ol {
  * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improves image quality when scaled in IE 7.
  */
-/* line 320, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 320, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 img {
   border: 0;
   /* 1 */
@@ -386,7 +386,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE 9.
  */
-/* line 329, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 329, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -397,7 +397,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
-/* line 341, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 341, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -408,7 +408,7 @@ figure {
 /*
  * Corrects margin displayed oddly in IE 6/7.
  */
-/* line 353, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 353, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 form {
   margin: 0;
 }
@@ -416,7 +416,7 @@ form {
 /*
  * Define consistent border, margin, and padding.
  */
-/* line 361, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 361, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -428,7 +428,7 @@ fieldset {
  * 2. Corrects text not wrapping in Firefox 3.
  * 3. Corrects alignment displayed oddly in IE 6/7.
  */
-/* line 373, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 373, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -445,7 +445,7 @@ legend {
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-/* line 390, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 390, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button,
 input,
 select,
@@ -464,7 +464,7 @@ textarea {
  * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 403, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 403, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -479,7 +479,7 @@ input {
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-/* line 420, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 420, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -495,7 +495,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 431, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 431, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -507,7 +507,7 @@ input[disabled] {
  * 3. Removes excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-/* line 443, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 443, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -525,7 +525,7 @@ input[type="radio"] {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 456, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 456, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -539,7 +539,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 469, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 469, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -548,7 +548,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in Firefox 3+.
  */
-/* line 478, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 478, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -559,7 +559,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-/* line 488, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 488, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -573,20 +573,20 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
-/* line 501, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 501, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 4, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 4, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grids {
   list-style: none;
   margin: 0 0 0 -1%;
   width: 102%;
 }
 
-/* line 12, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 12, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 div[class*="grid-"] {
   display: inline-block;
   float: left;
@@ -594,47 +594,47 @@ div[class*="grid-"] {
   padding: 0px;
 }
 
-/* line 25, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 25, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-1 {
   width: 6.333%;
 }
 
-/* line 28, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 28, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-3 {
   width: 23%;
 }
 
-/* line 31, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 31, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-4 {
   width: 31.333%;
 }
 
-/* line 34, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 34, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-one-third {
   width: 31.333%;
 }
 
-/* line 37, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 37, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-two-thirds {
   width: 64.666%;
 }
 
-/* line 40, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 40, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-half, .grid-6 {
   width: 48%;
 }
 
-/* line 43, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 43, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-12 {
   width: 98%;
 }
 
-/* line 47, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 47, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .resp-img {
   width: 100%;
 }
 
-/* line 24, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 24, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 html,
 button,
 input,
@@ -643,25 +643,25 @@ textarea {
   color: #6d6d6d;
 }
 
-/* line 28, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 28, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
 }
 
-/* line 33, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 33, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 38, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 38, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 43, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 43, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 hr {
   display: block;
   height: 1px;
@@ -671,24 +671,24 @@ hr {
   padding: 0;
 }
 
-/* line 52, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 52, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 img {
   vertical-align: middle;
 }
 
-/* line 56, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 56, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 62, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 62, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 66, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 66, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -699,40 +699,40 @@ textarea {
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
-/* line 78, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 78, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 body {
   font: 20px/30px Helvetica, Helvetica Neue, Arial;
   background-color: #ededed;
 }
 
-/* line 83, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 83, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .wrapper {
   width: 90%;
   margin: 0 5%;
 }
 
-/* line 90, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 90, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: #182e4b;
 }
 
-/* line 96, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 96, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 99, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 99, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 h2 {
   font-size: 1.3em;
 }
 
-/* line 106, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 106, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .profile-pic img {
   width: 100%;
 }
 
-/* line 111, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 111, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .mask {
   display: block;
   overflow: hidden;
@@ -743,7 +743,7 @@ h2 {
   background-color: #bababa;
 }
 
-/* line 121, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 121, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .profile-pic {
   position: relative;
   display: block;
@@ -755,12 +755,12 @@ h2 {
   cursor: pointer;
 }
 
-/* line 132, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 132, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .profile-pic:hover .name {
   display: inline-block;
 }
 
-/* line 136, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 136, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .profile-pic .name {
   display: none;
   position: absolute;
@@ -777,17 +777,17 @@ h2 {
   color: #ededed;
 }
 
-/* line 153, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 153, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .section-1 {
   background-color: #fdfdfe;
 }
 
-/* line 156, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 156, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .section-2 {
   background-color: #e9f0f8;
 }
 
-/* line 159, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 159, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .section-3 {
   background-color: #d6e2f2;
 }
@@ -795,7 +795,7 @@ h2 {
 /* ===================
     
    =================== */
-/* line 166, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 166, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .header-container {
   background-image: url(http://farm9.staticflickr.com/8196/8384886630_67cf05d1d6_o.jpg);
   background-color: #111;
@@ -805,7 +805,7 @@ h2 {
   height: 400px;
 }
 
-/* line 175, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 175, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .title {
   background-image: url(../images/logo.png);
   background-position: center;
@@ -822,39 +822,39 @@ h2 {
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.15);
 }
 
-/* line 188, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 188, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .footer-container,
 .main aside {
   border-top: 20px solid #cb170d;
 }
 
-/* line 194, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 194, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .header-container,
 .footer-container,
 .main aside {
   background-color: #bababa;
 }
 
-/* line 198, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 198, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .title {
   color: white;
 }
 
-/* line 203, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 203, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .event-info {
   font-size: 300%;
   line-height: 130%;
   text-align: center;
 }
 
-/* line 209, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 209, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .event-title, .event-location, .event-date {
   color: #3c76c0;
   font-weight: bold;
   border-bottom: 1px dotted;
 }
 
-/* line 217, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 217, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 ul.leaders {
   max-width: 40em;
   padding: 0;
@@ -862,7 +862,7 @@ ul.leaders {
   overflow: hidden;
 }
 
-/* line 223, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 223, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 ul.leaders li:before {
   float: left;
   width: 0;
@@ -870,25 +870,25 @@ ul.leaders li:before {
   content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
 }
 
-/* line 233, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 233, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 ul.leaders span:first-child {
   padding-right: 0.33em;
   background: #fdfdfe;
 }
 
-/* line 237, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 237, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 ul.leaders span + span {
   float: right;
   padding-left: 0.33em;
   background: #fdfdfe;
 }
 
-/* line 242, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 242, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 ul.leaders h2 {
   display: inline;
 }
 
-/* line 247, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 247, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .big-button {
   text-decoration: none;
   color: #333;
@@ -902,13 +902,13 @@ ul.leaders h2 {
   font-size: 2em;
 }
 
-/* line 259, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 259, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .big-button:hover {
   background-color: #fcb30c;
   color: #000;
 }
 
-/* line 263, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 263, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .button {
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
 }
@@ -916,23 +916,23 @@ ul.leaders h2 {
 /* ==============
     MOBILE: Main
    ============== */
-/* line 272, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 272, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .main {
   padding: 30px 0;
 }
 
-/* line 276, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 276, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .main article h1 {
   font-size: 2em;
 }
 
-/* line 280, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 280, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .main aside {
   color: white;
   padding: 0px 5% 10px;
 }
 
-/* line 285, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 285, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .footer-container footer {
   color: white;
   padding: 20px 0;
@@ -941,7 +941,7 @@ ul.leaders h2 {
 /* ===============
     ALL: IE Fixes
    =============== */
-/* line 294, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 294, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .ie7 .title {
   padding-top: 20px;
 }
@@ -949,7 +949,7 @@ ul.leaders h2 {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 302, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 302, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -963,12 +963,12 @@ a {
    Media Queries
    ========================================================================== */
 @media only screen and (max-width: 480px) {
-  /* line 320, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 320, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   .grid-1, .grid-3, .grid-4, .grid-one-third, .grid-two-thirds, .grid-half, .grid-6, .grid-12 {
     width: 98%;
   }
 
-  /* line 324, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 324, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   body {
     font-size: 80%;
   }
@@ -976,7 +976,7 @@ a {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  /* line 331, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 331, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   nav a {
     float: left;
     width: 27%;
@@ -985,12 +985,12 @@ a {
     margin-bottom: 0;
   }
 
-  /* line 339, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 339, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   nav li:first-child a {
     margin-left: 0;
   }
 
-  /* line 343, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 343, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   nav li:last-child a {
     margin-right: 0;
   }
@@ -998,18 +998,18 @@ a {
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-  /* line 351, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 351, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   nav ul li {
     display: inline;
   }
 
-  /* line 355, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 355, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   .oldie nav a {
     margin: 0 0.7%;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 362, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 362, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   .grid-1, .grid-3, .grid-4, .grid-one-third, .grid-two-thirds, .grid-half, .grid-6, .grid-12 {
     width: 98%;
   }
@@ -1020,7 +1020,7 @@ a {
   /* ============
       WIDE: Menu
      ============ */
-  /* line 385, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 385, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   nav {
     float: right;
     width: 38%;
@@ -1029,13 +1029,13 @@ a {
   /* ============
       WIDE: Main
      ============ */
-  /* line 394, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 394, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   .main article {
     float: left;
     width: 57%;
   }
 
-  /* line 399, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 399, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   .main aside {
     float: right;
     width: 28%;
@@ -1045,7 +1045,7 @@ a {
   /* ===============
       Maximal Width
      =============== */
-  /* line 411, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 411, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   .wrapper {
     width: 1026px;
     /* 1140px - 10% for margins */
@@ -1055,7 +1055,7 @@ a {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 421, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 421, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -1063,7 +1063,7 @@ a {
   *text-indent: -9999px;
 }
 
-/* line 428, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 428, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -1071,13 +1071,13 @@ a {
   height: 100%;
 }
 
-/* line 435, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 435, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 440, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 440, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1089,7 +1089,7 @@ a {
   width: 1px;
 }
 
-/* line 452, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 452, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1100,24 +1100,24 @@ a {
   width: auto;
 }
 
-/* line 461, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 461, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 466, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 466, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 471, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 471, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 475, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+/* line 475, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -1126,7 +1126,7 @@ a {
    Print styles
    ========================================================================== */
 @media print {
-  /* line 484, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 484, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1135,18 +1135,18 @@ a {
     text-shadow: none !important;
   }
 
-  /* line 492, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 492, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 496, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 496, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 500, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 500, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1154,33 +1154,33 @@ a {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 510, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 510, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 515, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 515, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 520, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 520, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 525, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 525, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 529, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 529, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   img {
     max-width: 100% !important;
   }
@@ -1189,7 +1189,7 @@ a {
     margin: 0.5cm;
 }
 
-  /* line 539, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 539, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   p,
   h2,
   h3 {
@@ -1197,7 +1197,7 @@ a {
     widows: 3;
   }
 
-  /* line 545, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_main.scss */
+  /* line 545, /Users/ewan/Documents/projects/highland_web_group/app/css/_main.scss */
   h2,
   h3 {
     page-break-after: avoid;
@@ -1210,7 +1210,7 @@ a {
 /*
  * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-/* line 21, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 21, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 article,
 aside,
 details,
@@ -1228,7 +1228,7 @@ summary {
 /*
  * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-/* line 31, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 31, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 audio,
 canvas,
 video {
@@ -1241,7 +1241,7 @@ video {
  * Prevents modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 42, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 42, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -1252,7 +1252,7 @@ audio:not([controls]) {
  * and Safari 4.
  * Known issue: no IE 6 support.
  */
-/* line 53, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 53, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -1266,7 +1266,7 @@ audio:not([controls]) {
  * 2. Prevents iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 68, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 68, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 html {
   font-size: 100%;
   /* 1 */
@@ -1280,7 +1280,7 @@ html {
  * Addresses `font-family` inconsistency between `textarea` and other form
  * elements.
  */
-/* line 83, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 83, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 html,
 button,
 input,
@@ -1292,7 +1292,7 @@ textarea {
 /*
  * Addresses margins handled incorrectly in IE 6/7.
  */
-/* line 91, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 91, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 body {
   margin: 0;
 }
@@ -1303,7 +1303,7 @@ body {
 /*
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
-/* line 103, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 103, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -1311,7 +1311,7 @@ a:focus {
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
  */
-/* line 112, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 112, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -1325,37 +1325,37 @@ a:hover {
  * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
-/* line 126, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 126, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 131, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 131, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-/* line 136, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 136, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-/* line 141, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 141, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-/* line 146, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 146, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-/* line 151, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 151, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0;
@@ -1364,7 +1364,7 @@ h6 {
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
-/* line 160, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 160, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -1372,13 +1372,13 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
-/* line 169, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 169, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 173, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 173, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 blockquote {
   margin: 1em 40px;
 }
@@ -1386,7 +1386,7 @@ blockquote {
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
-/* line 181, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 181, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -1394,7 +1394,7 @@ dfn {
 /*
  * Addresses styling not present in IE 6/7/8/9.
  */
-/* line 189, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 189, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -1403,7 +1403,7 @@ mark {
 /*
  * Addresses margins set differently in IE 6/7.
  */
-/* line 199, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 199, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 p,
 pre {
   margin: 1em 0;
@@ -1412,7 +1412,7 @@ pre {
 /*
  * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
-/* line 210, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 210, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 code,
 kbd,
 pre,
@@ -1425,7 +1425,7 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
-/* line 220, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 220, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -1435,7 +1435,7 @@ pre {
 /*
  * Addresses CSS quotes not supported in IE 6/7.
  */
-/* line 230, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 230, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 q {
   quotes: none;
 }
@@ -1443,7 +1443,7 @@ q {
 /*
  * Addresses `quotes` property not supported in Safari 4.
  */
-/* line 239, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 239, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 q:before,
 q:after {
   content: '';
@@ -1453,7 +1453,7 @@ q:after {
 /*
  * Addresses inconsistent and variable font size in all browsers.
  */
-/* line 248, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 248, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -1461,7 +1461,7 @@ small {
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 257, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 257, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -1470,12 +1470,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 264, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 264, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 268, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 268, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -1486,7 +1486,7 @@ sub {
 /*
  * Addresses margins set differently in IE 6/7.
  */
-/* line 283, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 283, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 dl,
 menu,
 ol,
@@ -1494,7 +1494,7 @@ ul {
   margin: 1em 0;
 }
 
-/* line 287, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 287, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 dd {
   margin: 0 0 0 40px;
 }
@@ -1502,7 +1502,7 @@ dd {
 /*
  * Addresses paddings set differently in IE 6/7.
  */
-/* line 297, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 297, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 menu,
 ol,
 ul {
@@ -1512,7 +1512,7 @@ ul {
 /*
  * Corrects list images handled incorrectly in IE 7.
  */
-/* line 306, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 306, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -1526,7 +1526,7 @@ nav ol {
  * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improves image quality when scaled in IE 7.
  */
-/* line 320, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 320, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 img {
   border: 0;
   /* 1 */
@@ -1537,7 +1537,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE 9.
  */
-/* line 329, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 329, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -1548,7 +1548,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
-/* line 341, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 341, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -1559,7 +1559,7 @@ figure {
 /*
  * Corrects margin displayed oddly in IE 6/7.
  */
-/* line 353, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 353, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 form {
   margin: 0;
 }
@@ -1567,7 +1567,7 @@ form {
 /*
  * Define consistent border, margin, and padding.
  */
-/* line 361, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 361, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -1579,7 +1579,7 @@ fieldset {
  * 2. Corrects text not wrapping in Firefox 3.
  * 3. Corrects alignment displayed oddly in IE 6/7.
  */
-/* line 373, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 373, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -1596,7 +1596,7 @@ legend {
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-/* line 390, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 390, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button,
 input,
 select,
@@ -1615,7 +1615,7 @@ textarea {
  * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 403, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 403, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -1630,7 +1630,7 @@ input {
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-/* line 420, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 420, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -1646,7 +1646,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 431, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 431, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -1658,7 +1658,7 @@ input[disabled] {
  * 3. Removes excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-/* line 443, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 443, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -1676,7 +1676,7 @@ input[type="radio"] {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 456, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 456, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -1690,7 +1690,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 469, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 469, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -1699,7 +1699,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in Firefox 3+.
  */
-/* line 478, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 478, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -1710,7 +1710,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-/* line 488, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 488, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -1724,7 +1724,7 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
-/* line 501, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 501, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -1736,7 +1736,7 @@ table {
 /*
  * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-/* line 21, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 21, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 article,
 aside,
 details,
@@ -1754,7 +1754,7 @@ summary {
 /*
  * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-/* line 31, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 31, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 audio,
 canvas,
 video {
@@ -1767,7 +1767,7 @@ video {
  * Prevents modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 42, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 42, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -1778,7 +1778,7 @@ audio:not([controls]) {
  * and Safari 4.
  * Known issue: no IE 6 support.
  */
-/* line 53, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 53, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -1792,7 +1792,7 @@ audio:not([controls]) {
  * 2. Prevents iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 68, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 68, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 html {
   font-size: 100%;
   /* 1 */
@@ -1806,7 +1806,7 @@ html {
  * Addresses `font-family` inconsistency between `textarea` and other form
  * elements.
  */
-/* line 83, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 83, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 html,
 button,
 input,
@@ -1818,7 +1818,7 @@ textarea {
 /*
  * Addresses margins handled incorrectly in IE 6/7.
  */
-/* line 91, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 91, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 body {
   margin: 0;
 }
@@ -1829,7 +1829,7 @@ body {
 /*
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
-/* line 103, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 103, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -1837,7 +1837,7 @@ a:focus {
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
  */
-/* line 112, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 112, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -1851,37 +1851,37 @@ a:hover {
  * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
-/* line 126, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 126, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 131, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 131, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-/* line 136, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 136, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-/* line 141, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 141, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-/* line 146, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 146, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-/* line 151, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 151, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0;
@@ -1890,7 +1890,7 @@ h6 {
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
-/* line 160, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 160, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -1898,13 +1898,13 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
-/* line 169, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 169, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 173, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 173, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 blockquote {
   margin: 1em 40px;
 }
@@ -1912,7 +1912,7 @@ blockquote {
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
-/* line 181, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 181, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -1920,7 +1920,7 @@ dfn {
 /*
  * Addresses styling not present in IE 6/7/8/9.
  */
-/* line 189, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 189, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -1929,7 +1929,7 @@ mark {
 /*
  * Addresses margins set differently in IE 6/7.
  */
-/* line 199, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 199, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 p,
 pre {
   margin: 1em 0;
@@ -1938,7 +1938,7 @@ pre {
 /*
  * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
-/* line 210, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 210, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 code,
 kbd,
 pre,
@@ -1951,7 +1951,7 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
-/* line 220, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 220, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -1961,7 +1961,7 @@ pre {
 /*
  * Addresses CSS quotes not supported in IE 6/7.
  */
-/* line 230, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 230, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 q {
   quotes: none;
 }
@@ -1969,7 +1969,7 @@ q {
 /*
  * Addresses `quotes` property not supported in Safari 4.
  */
-/* line 239, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 239, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 q:before,
 q:after {
   content: '';
@@ -1979,7 +1979,7 @@ q:after {
 /*
  * Addresses inconsistent and variable font size in all browsers.
  */
-/* line 248, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 248, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -1987,7 +1987,7 @@ small {
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 257, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 257, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -1996,12 +1996,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 264, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 264, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 268, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 268, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -2012,7 +2012,7 @@ sub {
 /*
  * Addresses margins set differently in IE 6/7.
  */
-/* line 283, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 283, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 dl,
 menu,
 ol,
@@ -2020,7 +2020,7 @@ ul {
   margin: 1em 0;
 }
 
-/* line 287, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 287, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 dd {
   margin: 0 0 0 40px;
 }
@@ -2028,7 +2028,7 @@ dd {
 /*
  * Addresses paddings set differently in IE 6/7.
  */
-/* line 297, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 297, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 menu,
 ol,
 ul {
@@ -2038,7 +2038,7 @@ ul {
 /*
  * Corrects list images handled incorrectly in IE 7.
  */
-/* line 306, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 306, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -2052,7 +2052,7 @@ nav ol {
  * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improves image quality when scaled in IE 7.
  */
-/* line 320, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 320, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 img {
   border: 0;
   /* 1 */
@@ -2063,7 +2063,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE 9.
  */
-/* line 329, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 329, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -2074,7 +2074,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
-/* line 341, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 341, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -2085,7 +2085,7 @@ figure {
 /*
  * Corrects margin displayed oddly in IE 6/7.
  */
-/* line 353, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 353, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 form {
   margin: 0;
 }
@@ -2093,7 +2093,7 @@ form {
 /*
  * Define consistent border, margin, and padding.
  */
-/* line 361, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 361, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -2105,7 +2105,7 @@ fieldset {
  * 2. Corrects text not wrapping in Firefox 3.
  * 3. Corrects alignment displayed oddly in IE 6/7.
  */
-/* line 373, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 373, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -2122,7 +2122,7 @@ legend {
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-/* line 390, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 390, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button,
 input,
 select,
@@ -2141,7 +2141,7 @@ textarea {
  * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 403, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 403, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -2156,7 +2156,7 @@ input {
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-/* line 420, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 420, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -2172,7 +2172,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 431, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 431, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -2184,7 +2184,7 @@ input[disabled] {
  * 3. Removes excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-/* line 443, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 443, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -2202,7 +2202,7 @@ input[type="radio"] {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 456, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 456, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -2216,7 +2216,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 469, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 469, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -2225,7 +2225,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in Firefox 3+.
  */
-/* line 478, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 478, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -2236,7 +2236,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-/* line 488, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 488, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -2250,20 +2250,20 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
-/* line 501, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_normalize.scss */
+/* line 501, /Users/ewan/Documents/projects/highland_web_group/app/css/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 4, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 4, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grids {
   list-style: none;
   margin: 0 0 0 -1%;
   width: 102%;
 }
 
-/* line 12, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 12, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 div[class*="grid-"] {
   display: inline-block;
   float: left;
@@ -2271,47 +2271,47 @@ div[class*="grid-"] {
   padding: 0px;
 }
 
-/* line 25, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 25, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-1 {
   width: 6.333%;
 }
 
-/* line 28, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 28, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-3 {
   width: 23%;
 }
 
-/* line 31, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 31, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-4 {
   width: 31.333%;
 }
 
-/* line 34, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 34, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-one-third {
   width: 31.333%;
 }
 
-/* line 37, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 37, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-two-thirds {
   width: 64.666%;
 }
 
-/* line 40, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 40, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-half, .grid-6 {
   width: 48%;
 }
 
-/* line 43, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 43, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .grid-12 {
   width: 98%;
 }
 
-/* line 47, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/_grid.scss */
+/* line 47, /Users/ewan/Documents/projects/highland_web_group/app/css/_grid.scss */
 .resp-img {
   width: 100%;
 }
 
-/* line 24, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 24, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 html,
 button,
 input,
@@ -2320,25 +2320,25 @@ textarea {
   color: #6d6d6d;
 }
 
-/* line 28, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 28, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
 }
 
-/* line 33, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 33, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 38, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 38, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 43, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 43, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 hr {
   display: block;
   height: 1px;
@@ -2348,24 +2348,24 @@ hr {
   padding: 0;
 }
 
-/* line 52, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 52, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 img {
   vertical-align: middle;
 }
 
-/* line 56, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 56, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 62, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 62, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 66, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 66, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -2376,40 +2376,40 @@ textarea {
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
-/* line 78, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 78, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 body {
   font: 20px/30px Helvetica, Helvetica Neue, Arial;
   background-color: #ededed;
 }
 
-/* line 83, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 83, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .wrapper {
   width: 90%;
   margin: 0 5%;
 }
 
-/* line 90, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 90, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: #182e4b;
 }
 
-/* line 96, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 96, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 99, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 99, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 h2 {
   font-size: 1.3em;
 }
 
-/* line 106, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 106, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .profile-pic img {
   width: 100%;
 }
 
-/* line 111, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 111, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .mask {
   display: block;
   overflow: hidden;
@@ -2420,7 +2420,7 @@ h2 {
   background-color: #bababa;
 }
 
-/* line 121, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 121, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .profile-pic {
   position: relative;
   display: block;
@@ -2432,12 +2432,12 @@ h2 {
   cursor: pointer;
 }
 
-/* line 132, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 132, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .profile-pic:hover .name {
   display: inline-block;
 }
 
-/* line 136, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 136, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .profile-pic .name {
   display: none;
   position: absolute;
@@ -2454,17 +2454,17 @@ h2 {
   color: #ededed;
 }
 
-/* line 153, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 153, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .section-1 {
   background-color: #fdfdfe;
 }
 
-/* line 156, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 156, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .section-2 {
   background-color: #e9f0f8;
 }
 
-/* line 159, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 159, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .section-3 {
   background-color: #d6e2f2;
 }
@@ -2472,7 +2472,7 @@ h2 {
 /* ===================
     
    =================== */
-/* line 166, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 166, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .header-container {
   background-image: url(http://farm9.staticflickr.com/8196/8384886630_67cf05d1d6_o.jpg);
   background-color: #111;
@@ -2482,7 +2482,7 @@ h2 {
   height: 400px;
 }
 
-/* line 175, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 175, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .title {
   background-image: url(../img/logo.png);
   background-position: center;
@@ -2499,39 +2499,39 @@ h2 {
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.15);
 }
 
-/* line 188, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 188, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .footer-container,
 .main aside {
   border-top: 20px solid #cb170d;
 }
 
-/* line 194, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 194, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .header-container,
 .footer-container,
 .main aside {
   background-color: #bababa;
 }
 
-/* line 198, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 198, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .title {
   color: white;
 }
 
-/* line 203, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 203, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .event-info {
   font-size: 300%;
   line-height: 130%;
   text-align: center;
 }
 
-/* line 209, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 209, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .event-title, .event-location, .event-date {
   color: #3c76c0;
   font-weight: bold;
   border-bottom: 1px dotted;
 }
 
-/* line 217, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 217, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 ul.leaders {
   max-width: 40em;
   padding: 0;
@@ -2539,7 +2539,7 @@ ul.leaders {
   overflow: hidden;
 }
 
-/* line 223, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 223, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 ul.leaders li:before {
   float: left;
   width: 0;
@@ -2547,25 +2547,25 @@ ul.leaders li:before {
   content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
 }
 
-/* line 233, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 233, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 ul.leaders span:first-child {
   padding-right: 0.33em;
   background: #fdfdfe;
 }
 
-/* line 237, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 237, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 ul.leaders span + span {
   float: right;
   padding-left: 0.33em;
   background: #fdfdfe;
 }
 
-/* line 242, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 242, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 ul.leaders h2 {
   display: inline;
 }
 
-/* line 247, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 247, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .big-button {
   text-decoration: none;
   color: #333;
@@ -2579,13 +2579,13 @@ ul.leaders h2 {
   font-size: 2em;
 }
 
-/* line 259, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 259, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .big-button:hover {
   background-color: #fcb30c;
   color: #000;
 }
 
-/* line 263, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 263, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .button {
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
 }
@@ -2593,23 +2593,23 @@ ul.leaders h2 {
 /* ==============
     MOBILE: Main
    ============== */
-/* line 272, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 272, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .main {
   padding: 30px 0;
 }
 
-/* line 276, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 276, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .main article h1 {
   font-size: 2em;
 }
 
-/* line 280, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 280, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .main aside {
   color: white;
   padding: 0px 5% 10px;
 }
 
-/* line 285, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 285, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .footer-container footer {
   color: white;
   padding: 20px 0;
@@ -2618,7 +2618,7 @@ ul.leaders h2 {
 /* ===============
     ALL: IE Fixes
    =============== */
-/* line 294, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 294, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .ie7 .title {
   padding-top: 20px;
 }
@@ -2626,7 +2626,7 @@ ul.leaders h2 {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 302, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 302, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2640,12 +2640,12 @@ a {
    Media Queries
    ========================================================================== */
 @media only screen and (max-width: 480px) {
-  /* line 320, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 320, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   .grid-1, .grid-3, .grid-4, .grid-one-third, .grid-two-thirds, .grid-half, .grid-6, .grid-12 {
     width: 98%;
   }
 
-  /* line 324, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 324, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   body {
     font-size: 80%;
   }
@@ -2653,7 +2653,7 @@ a {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  /* line 331, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 331, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   nav a {
     float: left;
     width: 27%;
@@ -2662,12 +2662,12 @@ a {
     margin-bottom: 0;
   }
 
-  /* line 339, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 339, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   nav li:first-child a {
     margin-left: 0;
   }
 
-  /* line 343, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 343, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   nav li:last-child a {
     margin-right: 0;
   }
@@ -2675,18 +2675,18 @@ a {
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-  /* line 351, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 351, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   nav ul li {
     display: inline;
   }
 
-  /* line 355, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 355, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   .oldie nav a {
     margin: 0 0.7%;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 362, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 362, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   .grid-1, .grid-3, .grid-4, .grid-one-third, .grid-two-thirds, .grid-half, .grid-6, .grid-12 {
     width: 98%;
   }
@@ -2697,7 +2697,7 @@ a {
   /* ============
       WIDE: Menu
      ============ */
-  /* line 385, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 385, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   nav {
     float: right;
     width: 38%;
@@ -2706,13 +2706,13 @@ a {
   /* ============
       WIDE: Main
      ============ */
-  /* line 394, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 394, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   .main article {
     float: left;
     width: 57%;
   }
 
-  /* line 399, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 399, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   .main aside {
     float: right;
     width: 28%;
@@ -2722,7 +2722,7 @@ a {
   /* ===============
       Maximal Width
      =============== */
-  /* line 411, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 411, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   .wrapper {
     width: 1026px;
     /* 1140px - 10% for margins */
@@ -2732,7 +2732,7 @@ a {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 421, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 421, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -2740,7 +2740,7 @@ a {
   *text-indent: -9999px;
 }
 
-/* line 428, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 428, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -2748,13 +2748,13 @@ a {
   height: 100%;
 }
 
-/* line 435, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 435, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 440, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 440, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2766,7 +2766,7 @@ a {
   width: 1px;
 }
 
-/* line 452, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 452, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -2777,24 +2777,24 @@ a {
   width: auto;
 }
 
-/* line 461, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 461, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 466, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 466, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 471, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 471, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 475, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+/* line 475, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -2803,7 +2803,7 @@ a {
    Print styles
    ========================================================================== */
 @media print {
-  /* line 484, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 484, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -2812,18 +2812,18 @@ a {
     text-shadow: none !important;
   }
 
-  /* line 492, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 492, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 496, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 496, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 500, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 500, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -2831,33 +2831,33 @@ a {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 510, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 510, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 515, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 515, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 520, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 520, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 525, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 525, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 529, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 529, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -2866,7 +2866,7 @@ a {
     margin: 0.5cm;
 }
 
-  /* line 539, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 539, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   p,
   h2,
   h3 {
@@ -2874,7 +2874,7 @@ a {
     widows: 3;
   }
 
-  /* line 545, /Users/Vivid/Dropbox/Git/highlandwebgroup.github.com/app/css/main.scss */
+  /* line 545, /Users/ewan/Documents/projects/highland_web_group/app/css/main.scss */
   h2,
   h3 {
     page-break-after: avoid;
