@@ -9,5 +9,5 @@ App.Event = DS.Model.extend({
   time: attr('date'),
   description: attr('string'),
   how_to_find_us: attr('string'),
-
+  venue: attr('object')
 })
