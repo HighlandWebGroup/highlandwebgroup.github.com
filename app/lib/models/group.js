@@ -29,6 +29,3 @@ App.Group = DS.Model.extend({
 })
 
 App.Group.sync = App.meetupSync('group');
-App.Group.sync.findEvents = function(group, name, process){
-  App.Event.sync.query({group_id: group.get('id')}, process);
-}

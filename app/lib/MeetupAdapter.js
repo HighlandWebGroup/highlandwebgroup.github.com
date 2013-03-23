@@ -19,6 +19,12 @@ App.meetupSync = function(type){
         process(result.results || []).load();
       });
     },
+    findHasMany: function(record, options, processor){
+      relationship_model = record.constructor.typeForRelationship(options.relationship)
+      q = {};
+      q[record.constructor.sync.type+"_id"] = record.id;
+      relationship_model.sync.query(q, processor)
+    },
     _query: function(query){
       Ember.assert("Must specify type", this.type);
       return App.ajax(this.base_url+"/"+this.type+"s", "GET", {data: query});
