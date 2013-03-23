@@ -4,31 +4,46 @@
  *
  **/
 
-App.MeetupAdapter = DS.RESTAdapter.extend({
-  url:"https://api.meetup.com/2",
-  ajax: function(url, type, hash) {
-    hash.url = url;
-    hash.type = type;
-    hash.dataType = 'jsonp';
-    hash.contentType = 'application/json; charset=utf-8';
-    hash.context = this;
-    hash.data = hash.data || {}
-    hash.data.key = "596c42283236355f551a246256c62"
-    if (hash.data && type !== 'GET') {
-      hash.data = JSON.stringify(hash.data);
+App.meetupSync = function(type){
+  sync = {
+    base_url:"https://api.meetup.com/2",
+    find: function(id, process){
+      q = {};
+      q[this.type+"_id"] = id;
+      this._query(q).then(function(result){
+        process(result.results.length > 0 ? result.results[0]  : []).load();
+      });
+    },
+    query: function(query, process){
+      this._query(query).then(function(result){
+        process(result.results || []).load();
+      });
+    },
+    _query: function(query){
+      Ember.assert("Must specify type", this.type);
+      return App.ajax(this.base_url+"/"+this.type+"s", "GET", {data: query});
     }
+  }
+  sync.type = type;
+  return sync;
+}
 
-    var old_s = hash.success;
-    hash.success = function(data){
-      result_type = url.substr(url.lastIndexOf('/') + 1);
-      var json = {}
-      json[result_type] = data.results;
-      old_s.call(this,json);
-    }
-
-    jQuery.ajax(hash);
-  },
+App.MeetupAdapter = DS.BasicAdapter.extend({
 });
+
+App.ajax = function(url, type, hash) {
+  hash.url = url;
+  hash.type = type;
+  hash.dataType = 'jsonp';
+  hash.contentType = 'application/json; charset=utf-8';
+  hash.data = hash.data || {}
+  hash.data.key = "596c42283236355f551a246256c62"
+  if (hash.data && type !== 'GET') {
+    hash.data = JSON.stringify(hash.data);
+  }
+  return jQuery.ajax(hash);
+}
+
 
 App.MeetupAdapter.registerTransform('object', {
   serialize: function(serialized) {

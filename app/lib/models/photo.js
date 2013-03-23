@@ -10,5 +10,6 @@ App.Photo = DS.Model.extend({
   photo_link: attr('string'),
   thumb_link: attr('string'),
   photo_album: attr('object')
-
 })
+
+App.Photo.sync = App.meetupSync('photo');

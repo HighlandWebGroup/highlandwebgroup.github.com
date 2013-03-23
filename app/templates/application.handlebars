@@ -2,26 +2,26 @@
   <div class="main wrapper clearfix">
     <div class="grid-12">
       <h1 class="event-info">
-          Our next event is <span class="event-title">{{next_event.name}}</span>.
+          Our next event is <span class="event-title">{{group.next_event.name}}</span>.
       </h1>
     </div>
 
     <div class="grid-two-thirds">
       <h2>Details</h2>
-      <span>{{{next_event.description}}}</span>
-{{ log next_event}}
+      <span>{{{group.next_event.description}}}</span>
+{{ log group }}
       <ul class="leaders">
           <li>
               <span><h2>Date</h2></span>
-              <span>{{timestamp next_event.time format="dddd, MMMM D, YYYY" }}</span>
+              <span>{{timestamp group.next_event.time format="dddd, MMMM D, YYYY" }}</span>
           </li>
           <li>
               <span><h2>Time</h2></span>
-              <span>{{timestamp next_event.time format="h:mma" }}</span>
+              <span>{{timestamp group.next_event.time format="h:mma" }}</span>
           </li>
           <li>
               <span><h2>Location</h2></span>
-              <span>{{next_event.venue.name}}</span>
+              <span>{{group.next_event.venue.name}}</span>
           </li>
       </ul>
     </div>
@@ -130,17 +130,17 @@
 
             </div>
 
-  {{{group.first.description}}}
+  {{{group.description}}}
 
   <h2>Past Events</h2>
-  {{#each event in past_events }}
+  {{#each event in group.past_events }}
     {{event.time}}
     {{{event.description}}}
     {{event_photo event}}
   {{/each}}
 
   <h2>Upcoming Events</h2>
-  {{#each upcoming_events }}
+  {{#each group.upcoming_events }}
     {{time}}
     {{{description}}}
   {{/each}}
