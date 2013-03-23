@@ -1,3 +1,4 @@
+require('ember-skeleton/models/event');
 
 var attr = DS.attr;
 

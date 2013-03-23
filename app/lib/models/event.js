@@ -1,11 +1,14 @@
 require('ember-skeleton/models/photo');
+require('ember-skeleton/models/rsvp');
 
 var attr = DS.attr;
 
 App.Event = DS.Model.extend({
 
   rsvps: DS.hasMany('App.Rsvp'),
-  photos: DS.hasMany('App.Poto'),
+  photos: DS.hasMany('App.Photo'),
+
+  group: DS.belongsTo('App.Group'),
 
   status: attr('string'),
   name: attr('string'),
@@ -16,7 +19,5 @@ App.Event = DS.Model.extend({
 })
 
 App.Event.sync = App.meetupSync('event');
-App.Event.sync.findRsvps = function(event, name, process){}
-App.Event.sync.findPhotos = function(event, name, process){}
 
 

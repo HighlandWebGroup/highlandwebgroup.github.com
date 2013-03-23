@@ -6,17 +6,24 @@
 
 App.meetupSync = function(type){
   sync = {
+    munge: function(json){json},
     base_url:"https://api.meetup.com/2",
     find: function(id, process){
       q = {};
       q[this.type+"_id"] = id;
+      _munge = this.munge;
       this._query(q).then(function(result){
-        process(result.results.length > 0 ? result.results[0]  : []).load();
+        process(result.results.length > 0 ? result.results[0]  : [])
+          .munge(_munge)
+          .load();
       });
     },
     query: function(query, process){
+      _munge = this.munge;
       this._query(query).then(function(result){
-        process(result.results || []).load();
+        process(result.results || [])
+          .munge(_munge)
+          .load();
       });
     },
     findHasMany: function(record, options, processor){
