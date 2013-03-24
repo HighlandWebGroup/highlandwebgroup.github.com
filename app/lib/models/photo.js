@@ -2,6 +2,8 @@ var attr = DS.attr;
 
 App.Photo = DS.Model.extend({
 
+  //event: DS.belongsTo('App.Evnet'),
+
   caption: attr('string'),
   created: attr('date'),
   updated: attr('date'),

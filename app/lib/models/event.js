@@ -8,7 +8,13 @@ App.Event = DS.Model.extend({
   rsvps: DS.hasMany('App.Rsvp'),
   photos: DS.hasMany('App.Photo'),
 
-  group: DS.belongsTo('App.Group'),
+  //group: DS.belongsTo('App.Group'),
+
+  attending_rsvps: function(){
+    return Ember.ArrayController.create({
+      content: this.get('rsvps').filterProperty('response','yes')
+    });
+  }.property('rsvps.@each'),
 
   status: attr('string'),
   name: attr('string'),

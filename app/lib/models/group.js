@@ -23,7 +23,7 @@ App.Group = DS.Model.extend({
     return Ember.ObjectController.create({
       content: this.get('upcoming_events.firstObject')
     });
-  }.property('upcoming_events'),
+  }.property('upcoming_events.@each'),
 
   urlname: attr('string'),
   description: attr('string'),

@@ -37,8 +37,9 @@ App.meetupSync = function(type){
       return App.ajax(this.base_url+"/"+this.type+"s", "GET", {data: query});
     }
   }
-  sync.type = type;
-  return sync;
+  sync_copy = $.extend(true, {}, sync)
+  sync_copy.type = type;
+  return sync_copy;
 }
 
 App.MeetupAdapter = DS.BasicAdapter.extend({
