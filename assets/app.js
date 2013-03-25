@@ -1,7 +1,7 @@
 
 loader.register('ember-skeleton/~templates/_attendees', function(require) {
 
-return Ember.Handlebars.compile("{{#each rsvps}}\n<a class=\"profile-pic\" {{bindAttr src=\"memberLink\"}}>\n  <span class=\"name\">{{member.name}}</span>\n  <span class=\"mask\">\n    <img {{bindAttr src=\"member_photo.photo_link\"}} >\n  </span>\n</a>\n{{/each}}\n\n");
+return Ember.Handlebars.compile("{{#each rsvps}}\n<a class=\"profile-pic\" {{bindAttr href=\"memberLink\"}}>\n  <span class=\"name\">{{member.name}}</span>\n  <span class=\"mask\">\n    <img {{bindAttr src=\"member_photo.photo_link\"}} >\n  </span>\n</a>\n{{/each}}\n\n");
 
 });
 
