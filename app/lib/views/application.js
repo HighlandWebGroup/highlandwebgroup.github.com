@@ -1,10 +1,5 @@
 require('ember-skeleton/core');
 
-App.ApplicationView = Ember.View.extend({
-  templateName: 'ember-skeleton/~templates/application'
-});
-
-App.EventsView = Ember.View.extend({
-  templateName: 'ember-skeleton/~templates/events'
-});
-
+Ember.TEMPLATES['_eventSummary'] = require('ember-skeleton/~templates/_eventSummary');
+Ember.TEMPLATES['application'] = require('ember-skeleton/~templates/application');
+Ember.TEMPLATES['_attendees'] = require('ember-skeleton/~templates/_attendees');

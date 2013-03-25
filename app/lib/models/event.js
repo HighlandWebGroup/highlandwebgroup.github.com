@@ -25,5 +25,5 @@ App.Event = DS.Model.extend({
 })
 
 App.Event.sync = App.meetupSync('event');
-
+App.Event.sync.throttle_time = 10;
 

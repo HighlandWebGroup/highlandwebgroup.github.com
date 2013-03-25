@@ -1,0 +1,9 @@
+{{#each rsvps}}
+<a class="profile-pic" {{bindAttr src="memberLink"}}>
+  <span class="name">{{member.name}}</span>
+  <span class="mask">
+    <img {{bindAttr src="member_photo.photo_link"}} >
+  </span>
+</a>
+{{/each}}
+
