@@ -46,7 +46,7 @@ App.meetupSync = function(type){
       relationship_model = record.constructor.typeForRelationship(options.relationship)
       q = {};
       q[record.constructor.sync.type+"_id"] = record.id;
-      relationship_model.sync.query($.extend({},q, this.findHasManyQueryOptions), processor)
+      relationship_model.sync.query(Ember.$.extend({},q, this.findHasManyQueryOptions), processor)
     },
     _query: function(query){
       Ember.assert("Must specify type", this.type);
@@ -54,7 +54,7 @@ App.meetupSync = function(type){
       return App.ajax(this.base_url+"/"+this.type+"s", "GET", {data: query});
     }
   }
-  sync_copy = $.extend(true, {}, sync)
+  sync_copy = Ember.$.extend(true, {}, sync)
   sync_copy.type = type;
   return sync_copy;
 }
