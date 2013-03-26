@@ -16,6 +16,7 @@ App.Event = DS.Model.extend({
     });
   }.property('rsvps.@each'),
 
+  event_url: attr('string'),
   status: attr('string'),
   name: attr('string'),
   time: attr('date'),
