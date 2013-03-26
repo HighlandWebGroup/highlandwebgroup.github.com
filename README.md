@@ -62,7 +62,8 @@ Deploy
 
 Site is hosted on github pages, http://highlandwebgroup.github.com/
 
-      bundle exec rake build
+      rm -rf tmp
+      RAKEP_MODE=production bundle exec rake build
       git add assets
       git commit -m "updated assets files for deployment"
       git push origin master
