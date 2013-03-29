@@ -1,6 +1,3 @@
-require('ember-skeleton/models/photo');
-require('ember-skeleton/models/rsvp');
-
 var attr = DS.attr;
 
 App.Event = DS.Model.extend({
@@ -8,7 +5,7 @@ App.Event = DS.Model.extend({
   rsvps: DS.hasMany('App.Rsvp'),
   photos: DS.hasMany('App.Photo'),
 
-  //group: DS.belongsTo('App.Group'),
+  group: DS.belongsTo('App.Group'),
 
   attending_rsvps: function(){
     return Ember.ArrayController.create({
@@ -26,5 +23,10 @@ App.Event = DS.Model.extend({
 })
 
 App.Event.sync = App.meetupSync('event');
-App.Event.sync.throttle_time = 10;
+App.Event.sync.munge = function(json){
+  if(json.group && json.group.id){
+    json.group_id = json.group.id;
+    json.group = null; //not sure why this is required. Stop sideloading?
+  }
+}
 

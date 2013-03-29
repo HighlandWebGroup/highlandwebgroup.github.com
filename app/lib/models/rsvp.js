@@ -2,7 +2,7 @@ var attr = DS.attr;
 
 App.Rsvp = DS.Model.extend({
 
-  //event: DS.belongsTo('App.Event'),
+  event: DS.belongsTo('App.Event'),
   memberLink: function(){
     return "http://www.meetup.com/members/"+this.get('member.member_id');
   }.property('member'),
@@ -21,6 +21,10 @@ App.Rsvp.sync.munge = function(json){
     json.id = "RecurringOrganizersRsvpId";
   }else{
     json.id = json.rsvp_id;
+  }
+  if(json.event){
+    json.event_id = json.event.id;
+    json.event = null;
   }
 
   return json;

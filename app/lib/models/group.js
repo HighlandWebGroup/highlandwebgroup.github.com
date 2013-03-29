@@ -1,5 +1,3 @@
-require('ember-skeleton/models/event');
-
 var attr = DS.attr;
 
 App.Group = DS.Model.extend({
