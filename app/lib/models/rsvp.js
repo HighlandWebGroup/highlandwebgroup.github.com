@@ -25,4 +25,3 @@ App.Rsvp.sync.munge = function(json){
 
   return json;
 }
-App.Rsvp.sync.throttle_time = 500; //throttle rsvp requests

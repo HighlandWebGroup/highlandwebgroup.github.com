@@ -6,7 +6,6 @@
 
 App.meetupSync = function(type){
   sync = {
-    throttle_time: 0, //meetup api will suspend access if to many requests made at the same time
     munge: function(json){json},
     findHasManyQueryOptions: {},
     base_url:"https://api.meetup.com/2",
@@ -14,33 +13,19 @@ App.meetupSync = function(type){
       q = {};
       q[this.type+"_id"] = id;
       _munge = this.munge;
-      Ember.run.later(this, function(){
-        this._query(q).then(function(result){
-          process(result.results.length > 0 ? result.results[0]  : [])
-            .munge(_munge)
-            .load();
-        });
-      }, this.throttleNoise());
-    },
-    //if we are throttling requests put a bit of varition on throttle time
-    //we might make a bunch of request while looping through associations
-    //this will spread out the requests a bit.
-    throttleNoise: function(){
-      if(this.throttle_time == 0){
-        return 0;
-      }
-      // +/- between 0-10%
-      return this.throttle_time * ((Math.random()*2)-1) ;
+      this._query(q, function(result){
+        process(result.results.length > 0 ? result.results[0]  : [])
+          .munge(_munge)
+          .load();
+      });
     },
     query: function(query, process){
       _munge = this.munge;
-      Ember.run.later(this, function(){
-        this._query(query).then(function(result){
-          process(result.results || [])
-            .munge(_munge)
-            .load();
-        })
-      }, this.throttleNoise());
+      this._query(query, function(result){
+        process(result.results || [])
+          .munge(_munge)
+          .load();
+      })
     },
     findHasMany: function(record, options, processor){
       relationship_model = record.constructor.typeForRelationship(options.relationship)
@@ -48,11 +33,10 @@ App.meetupSync = function(type){
       q[record.constructor.sync.type+"_id"] = record.id;
       relationship_model.sync.query(Ember.$.extend({},q, this.findHasManyQueryOptions), processor)
     },
-    _query: function(query){
+    _query: _.rateLimit(function(query, processResult){
       Ember.assert("Must specify type", this.type);
-
-      return App.ajax(this.base_url+"/"+this.type+"s", "GET", {data: query});
-    }
+      App.ajax(this.base_url+"/"+this.type+"s", "GET", {data: query}).then(processResult);
+    }, 100),
   }
   sync_copy = Ember.$.extend(true, {}, sync)
   sync_copy.type = type;
