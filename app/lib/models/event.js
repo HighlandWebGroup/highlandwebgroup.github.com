@@ -26,7 +26,7 @@ App.Event.sync = App.meetupSync('event');
 App.Event.sync.munge = function(json){
   if(json.group && json.group.id){
     json.group_id = json.group.id;
-    json.group = null; //not sure why this is required. Stop sideloading?
+    json.group = null;
   }
 }
 

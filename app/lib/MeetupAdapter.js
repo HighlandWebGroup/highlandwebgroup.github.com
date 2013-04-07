@@ -1,9 +1,3 @@
-/**
- *
- *  You can only make find queries 
- *
- **/
-
 App.meetupSync = function(type){
   sync = {
     munge: function(json){json},
@@ -53,10 +47,7 @@ App.ajax = function(url, type, hash) {
   hash.contentType = 'application/json; charset=utf-8';
   hash.data = hash.data || {}
   hash.data.key = "d6c68784a7667776f6c4b2c6d525131"
-  if (hash.data && type !== 'GET') {
-    hash.data = JSON.stringify(hash.data);
-  }
-  return jQuery.ajax(hash);
+  return Ember.$.ajax(hash);
 }
 
 
