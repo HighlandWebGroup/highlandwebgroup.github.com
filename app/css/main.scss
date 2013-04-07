@@ -117,7 +117,9 @@ h2{
   border-radius: 100%;
   background-color: darken($bg,20%)
 }
-
+.mask:hover{
+    overflow: normal;
+}
 .profile-pic {
   position: relative;
   display: block;
@@ -129,26 +131,29 @@ h2{
   cursor: pointer;
 }
 
-.profile-pic:hover .name {
-  display: inline-block;
-}
-
 .profile-pic .name {
-  display: none;
-  position: absolute;
-  top: -35px;
-  padding: 8px;
-  border: 1px solid lighten($bg,50%);
-  background-color: invert($bg);
-  border-radius: 10px;
-  line-height: 15px;
-  white-space: nowrap;
-  word-wrap: normal;
-  z-index: 5;
-  text-shadow: none;
-  color:$bg;
+    opacity:0;
+    display: inline-block;
+    position: absolute;
+    padding: 8px;
+    top: 0px;
+    border: 1px solid lighten($bg,50%);
+    background-color: invert($bg);
+    border-radius: 10px;
+    line-height: 15px;
+    white-space: nowrap;
+    word-wrap: normal;
+    z-index: 5;
+    text-shadow: none;
+    color:$bg;
+    @include transition(all .2s ease-in-out)
 }
+.profile-pic:hover .name {
+  display: block;
+  opacity:1;
+  top: -35px;
 
+}
 
 .section-1{
     background-color: $section-1;
@@ -187,6 +192,11 @@ h2{
 .footer-container,
 .main aside {
     border-top: 20px solid $hwg-red;
+}
+
+.footer-container .profile-pic{
+    width:3%;
+
 }
 
 .header-container,
@@ -417,7 +427,9 @@ body{
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
+.centered{
+    text-align:center;
+}
 .ir {
     background-color: transparent;
     border: 0;

@@ -29,19 +29,23 @@
     <div class="grid-one-third" style="height:300px">
       <h2>Who's Coming?</h2>
       {{partial 'attendees'}}
+      <div class="grid-12">
+        <a {{bindAttr href="event_url" }} {{bindAttr data-event="id"}} class="button big-button">R.S.V.P.</a>
+      </div>
     </div>
-    <a {{bindAttr href="event_url" }} {{bindAttr data-event="id"}} class="mu-rsvp-btn">RSVP</a>
+    
   </div>
 </div>
 {{/with}}
 
 <div class="main-container section-2">
   <div class="main wrapper clearfix">
-    <h2 style="clear:both">Previous events</h2>
+    <h1 class="centered" style="clear:both">Our past events</h1>
 
       {{#each group.past_four_events }}
 
         <div class="grid-3">
+          <h4>{{name}}</h4>
           {{{description}}}
           <div class="grid-12">
             <h3>attendees</h3>
@@ -70,22 +74,28 @@
 
 <div class="footer-container">
   <footer class="wrapper">
-    <h3>Footnotes go here...</h3>
-    <p>Made by <a href="http://mrloop.com/">mrloop</a> and <a href="http://vivid-ness.co.uk">vivid-ness</a><p>
-    <p>
-
-      <a class="profile-pic" src="http://mrloop.com/" data-bindattr-73="73">
+    <p>Made by <a href="http://mrloop.com/">mrloop</a> 
+    <a class="profile-pic" src="http://mrloop.com/" data-bindattr-73="73">
         <span class="name"><script id="metamorph-107-start" type="text/x-placeholder"></script>ewan<script id="metamorph-107-end" type="text/x-placeholder"></script></span>
         <span class="mask">
           <img src="http://photos2.meetupstatic.com/photos/member/6/b/e/6/member_79647622.jpeg" data-bindattr-74="74">
         </span>
       </a>
 
+     and <a href="http://vivid-ness.co.uk">vivid-ness</a>
+
       <a class="profile-pic" src="http://www.vivid-ness.co.uk/" data-bindattr-65="65">
       <span class="name"><script id="metamorph-103-start" type="text/x-placeholder"></script>Alistair Chisholm<script id="metamorph-103-end" type="text/x-placeholder"></script></span>
       <span class="mask">
         <img src="http://photos1.meetupstatic.com/photos/member/1/c/6/1/member_11647265.jpeg" data-bindattr-66="66">
       </span>
+
+     <p>
+    <p>
+
+      
+
+
       </p>
     </a>
   </footer>
