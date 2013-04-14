@@ -9,7 +9,7 @@ App.Event = DS.Model.extend({
 
   attending_rsvps: function(){
     return Ember.ArrayController.create({
-      content: this.get('rsvps').filterProperty('response','yes')
+      content: App.shuffle(this.get('rsvps').filterProperty('response','yes'))
     });
   }.property('rsvps.@each'),
 
