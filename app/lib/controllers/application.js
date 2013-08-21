@@ -30,5 +30,8 @@ App.ApplicationController = Ember.Controller.extend({
     //Must be event we can observe for this?
     Ember.run.later(null, function(){window.mu.rsvpBtns()},1000);
   }.observes('group.next_event'),
+  rsvpClicked: function(){
+    Em.$('.mu-rsvp-btn').click()
+  }
 
 });

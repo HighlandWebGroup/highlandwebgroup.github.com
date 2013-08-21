@@ -30,7 +30,8 @@
       <h2>Who's Coming?</h2>
       {{partial 'attendees'}}
       <div class="grid-12">
-        <a {{bindAttr href="event_url" }} {{bindAttr data-event="id"}} class="mu-rsvp-btn button big-button">R.S.V.P.</a>
+        <a {{action "rsvpClicked"}} class="button big-button">R.S.V.P.</a>
+        <a {{bindAttr href="event_url" }} {{bindAttr data-event="id"}} class="mu-rsvp-btn hidden"></a>
       </div>
     </div>
     
