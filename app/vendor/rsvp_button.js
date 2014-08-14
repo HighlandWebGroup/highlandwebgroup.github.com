@@ -1,7 +1,7 @@
 !function(){
-  highland_web_group_id = "ub5hv747qhk13g1r4i1mdv6pij"
-  localhost_id = "nak74qv2qlg4s63rdh0lmag1q5";
-  highlandwebgroup_github_id = "v9hk1pk5qav305eivo2fjd3od5";
+  highland_web_group_id = "9gl2hb3gnh0adqs91ur8oe51q0"
+  localhost_id = "o2i5pb9tdktj5vq8kj7em780dl";
+  highlandwebgroup_github_id = "s80l4mvpc6ugvnefj0oshkspgv";
 
   web_id = highland_web_group_id;
   if(~document.location.hostname.indexOf('github')){
@@ -16,9 +16,9 @@
 
   var js,fjs=d.getElementsByTagName(s)[0];
   if(!d.getElementById(id)){
-    js=d.createElement(s); 
+    js=d.createElement(s);
     js.id=id;js.async=true;
-    js.src= "https://secure.meetup.com/890357987448484755600/script/api/mu.btns.js?id="+web_id;
+    js.src= "https://secure.meetup.com/script/217965377037627760507776/api/mu.btns.js?id="+web_id;
     fjs.parentNode.insertBefore(js,fjs);
   }
 }();
