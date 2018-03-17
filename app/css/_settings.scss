@@ -1,0 +1,90 @@
+//******************************************************************************
+// Settings.
+//
+// Global configuration and settings.
+//******************************************************************************
+
+
+//==============================================================================
+// Variables.
+//
+// Used like an H2 heading for components and large related chunks of css.
+//==============================================================================
+
+
+//------------------------------------------------------------------------------
+// Section Sub-Heading.
+//
+// Used like an H3 heading for sub-components within a section.
+//-----
+
+
+// Colours.
+// ==========================================================================
+
+$hwg-grey:   rgba(58, 58, 58, 1.0);
+$hwg-red:    rgba(203, 23, 13, 1.0);
+$hwg-blue:   rgba(60, 118, 192, 1.0);
+$hwg-yellow: #FCDB0C;
+$bg: lighten($hwg-grey, 70%);
+
+$grey-96: #f5f5f5;
+$grey-86: #dbdbdb;
+$grey-60: #999999;
+$grey-33: #555353;
+$grey-15: #262626;
+
+$section-1: lighten($hwg-blue, 50%);
+$section-2: lighten($hwg-blue, 45%);
+$section-3: lighten($hwg-blue, 40%);
+
+
+
+//==============================================================================
+// Breakpoints.
+//
+// Adapt these widths to suit the content!
+//==============================================================================
+
+$mobile-wide-width:  480px;
+$tablet-width:       768px;
+$desktop-width:      1140px;
+$desktop-wide-width: 1px;
+
+// Media Query Mixins.
+// ==========================================================================
+
+@mixin mobile-wide {
+    @media (min-width: #{$mobile-wide-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin desktop-wide {
+    @media (min-width: #{$desktop-wide-width}) {
+        @content;
+    }
+}
+
+// Mixins.
+// ==========================================================================
+
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
